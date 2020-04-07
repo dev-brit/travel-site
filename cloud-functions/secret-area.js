@@ -11,7 +11,7 @@ exports.handler = function(event, context, callback) {
     body = {};
   }
 
-  if (body.password == "javascriptPublicCanSee") {
+  if (body.password == "javascriptPasswordPublicCanSee") {
     callback(null, {
       statusCode: 200,
       body: secretContent
